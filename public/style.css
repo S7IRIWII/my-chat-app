@@ -70,7 +70,9 @@ body {
 #chat-box {
     display: none;
 }
-
+#titre_dispo{
+    color: black;
+}
 #user-list {
     display: block;
     max-height: 400px;
