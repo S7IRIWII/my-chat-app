@@ -74,7 +74,8 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 4px solid #000000; /* Professional border for each user */
+    border-style: solid;
+    border-color: black;
 }
 
 #online-users li {
@@ -83,7 +84,8 @@ body {
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
-    border: 2px solid #000000; /* Professional border for each user */
+    border-style: solid;
+    border-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,7 +180,6 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease;
-    margin-left: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
