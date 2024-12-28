@@ -62,7 +62,7 @@ sendBtn.addEventListener("click", () => {
             recipient: currentRecipient,
             message,
         });
-        messages.innerHTML += `<div>You: ${message}</div>`;
+        messages.innerHTML += `<div>Vous : ${message}</div>`;
         messageInput.value = "";
     }
 });
