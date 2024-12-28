@@ -82,7 +82,7 @@ body {
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
-    border: 2px solid #4caf50; /* Professional border for each user */
+    border: 2px solid Black; /* Professional border for each user */
     display: flex;
     justify-content: space-between;
     align-items: center;
