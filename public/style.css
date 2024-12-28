@@ -72,7 +72,6 @@ body {
 
 #online-users {
     list-style-type: none;
-    border: #333;
     margin: 0;
     padding: 0;
 }
@@ -83,16 +82,20 @@ body {
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
+    border: 2px solid #4caf50; /* Professional border for each user */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 #online-users li:hover {
     background: #ffffff55;
+    border-color: #66bb6a; /* Highlight border on hover */
     cursor: pointer;
 }
 
+/* Chat Box */
 #chat-box {
     display: none;
     flex-direction: column;
@@ -102,16 +105,21 @@ body {
     border-radius: 15px;
     padding: 20px;
     overflow: hidden;
+    position: relative; /* Allows better positioning of elements inside */
 }
 
 #chat-box header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-#chat-box header button, 
-#back-to-users {
+/* "Retour to See Users" Button */
+#chat-box .retour-button {
+    position: absolute;
+    bottom: 60px; /* Adjusted to place above the input area */
+    left: 50%;
+    transform: translateX(-50%);
     background: #4caf50;
     color: #fff;
     border: none;
@@ -122,16 +130,15 @@ body {
     font-weight: bold;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    
 }
 
-#chat-box header button:hover, 
-#back-to-users:hover {
+#chat-box .retour-button:hover {
     background: #66bb6a;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
 }
 
+/* Chat Messages */
 #chat-messages {
     flex-grow: 1;
     overflow-y: auto;
@@ -141,14 +148,15 @@ body {
     border-radius: 10px;
 }
 
-#chat-messages .message {
-    margin-bottom: 10px;
-}
-
+/* Message Input Section */
 #message-input-section {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    position: absolute;
+    bottom: 10px; /* Place at the very bottom of the chat box */
+    left: 20px;
+    right: 20px;
 }
 
 #message-input-section input {
@@ -159,8 +167,7 @@ body {
     font-size: 16px;
 }
 
-#message-input-section button, 
-#send-message {
+#message-input-section button {
     background: #4caf50;
     color: #fff;
     border: none;
@@ -174,8 +181,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-#message-input-section button:hover, 
-#send-message:hover {
+#message-input-section button:hover {
     background: #66bb6a;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
