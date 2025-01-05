@@ -36,7 +36,6 @@ socket.on("updateUserList", (users) => {
                 currentRecipient = user;
                 chatBox.style.display = "block";
                 userList.style.display = "none";
-                titre-dispo.style.display = "none";
 
                 // Request chat history
                 socket.emit("getChatHistory", { sender: currentUser, recipient: currentRecipient });
