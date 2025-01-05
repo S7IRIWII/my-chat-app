@@ -22,7 +22,6 @@ joinBtn.addEventListener("click", () => {
         socket.emit("newUser", username); // Notify server of new user
         loginScreen.style.display = "none";
         chatScreen.style.display = "block";
-        send-btn.style.display = "none";
     }
 });
 
